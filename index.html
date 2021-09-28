@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- link css -->
+  <link rel="stylesheet" href="index.css">
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+</head>
+<body>
+  <!-- 導覽列 -->
+  <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span>Fun</span>遊台灣</a>
+
+    <nav class="navbar">
+      <a href="#home">首頁</a>
+      <a href="#book">行程預約</a>
+      <a href="#packages">推薦行程</a>
+      <a href="#services">服務</a>
+      <a href="#gallery">相片牆</a>
+      <a href="#review" >活動評論</a>
+      <a href="#contact">聯絡我們</a>
+    </nav>
+
+    <div class="icons">
+      <i class="fas fa-search" id="search_btn"></i>
+      <i class="fas fa-user" id="user_btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+      <input type="search" id="search-bar" placeholder="&nbsp;搜尋路線">
+      <label for="search-bar" class="fas fa-search"></label>
+    </form>
+  </header>
+
+  <!-- 登入 -->
+  <div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="#">
+      <h2>登入</h2>
+      <input type="email" class="box" placeholder="請輸入email">
+      <input type="password" class="box" placeholder="請輸入密碼">
+      <input type="submit" class="btn" value="登入">
+      <input type="checkbox" id="remember">
+      <label for="remember">保持登入</label>
+      <p>忘記密碼？<a href="#">重設密碼</a></p>
+      <p>未有帳號？<a href="#">建立帳號</a></p>
+    </form>
+  </div>
+  
+  <!-- 首頁 -->
+  <section class="home" id="home">
+
+    <div class="content">
+      <h2>Discover the beauty of Taiwan</h2>
+      <p>Fun遊台灣</p>
+      <a href="#">探索更多</a>
+    </div>
+
+    <!-- 儲存src的span -->
+    <div class="controls">
+      <span class="vid-btn" data-src="images/01.小烏來天空步道.mp4"></span>
+      <span class="vid-btn" data-src="images/【茶壺山】空拍.mp4"></span>
+      <span class="vid-btn active" data-src="images/合歡山4k.mp4"></span>
+      <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+      <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+    </div>
+
+    <div class="video-container">
+      <video src="images/合歡山4k.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+  </section>
+
+  <!-- 預約 -->
+  <section class="book" id="book">
+    <div class="title">
+      <span>行</span>
+      <span>程</span>
+      <span>預</span>
+      <span>約</span>
+    </div>
+
+    <div class="content">
+      <div class="images">
+        <img src="images/book_img.jpg" alt="">
+      </div>
+
+      <form action="#">
+        <div class="inputbox">
+          <h2>行程</h2>
+          <input type="text">
+        </div>
+        <div class="inputbox">
+          <h2>人數</h2>
+          <input type="number">
+        </div>
+        <div class="inputbox">
+          <h2>日期</h2>
+          <input type="date">
+        </div>
+
+
+        <input type="submit" class="btn" value="送出">
+      </form>
+    </div>
+  
+  </section>
+
+  <!-- 推薦行程 -->
+  <section class="packages" id="packages">
+    <div class="title">
+      <span>推</span>
+      <span>薦</span>
+      <span>行</span>
+      <span>程</span>
+    </div>
+
+    <div class="box-container">
+      
+      <div class="box">
+        <img src="images/g1.jpg">
+        <div class="content">
+          <h2 class="location"> <i class="fas fa-map-marker-alt"></i> 饒河觀光夜市</h2>
+          <p>位於台灣臺北市松山區饒河街，為臺北市著名的觀光夜市之一。胡椒餅已是饒河夜市的有名小吃，是不少國外旅客來饒河必吃美食</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price">$90 
+              <span class="price2">$120</span> 
+          </div>
+          <input  type="submit" class="btn" value="立即預約">
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/g2.jpg">
+        <div class="content">
+            <h2 class="location"> <i class="fas fa-map-marker-alt"></i> 清水斷崖</h2>
+          <p>清水斷崖是位於台灣花蓮縣秀林鄉的海岸斷崖，是蘇花公路和仁至崇德路段著名的旅遊景點，名列為台灣八景之一</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price-tag">
+            <div class="price">$90 
+              <span class="price2">$120</span> 
+            </div>
+          </div>
+          <input type="submit" class="btn" value="立即預約">
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/g3.jpg">
+        <div class="content">
+            <h2 class="location"> <i class="fas fa-map-marker-alt"></i> 自由廣場</h2>
+          <p>位於臺灣臺北市中正紀念堂園區內的廣場，正面牌樓原題字為「大中至正」，經於96年(2007年)12月7日更名為「自由廣場」</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price-tag">
+            <div class="price">$90 
+              <span class="price2">$120</span> 
+            </div>
+          </div>
+          <input type="submit" class="btn" value="立即預約">
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/g4.jpg">
+        <div class="content">
+            <h2 class="location"> <i class="fas fa-map-marker-alt"></i> 女王頭</h2>
+          <p>女王頭為一顆蕈狀石，是台灣野柳地質公園的一個知名的差異侵蝕地形景觀，外型宛如一個凝視遠方的女王，其頸部修長、臉部線條優美</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price-tag">
+            <div class="price">$90 
+              <span class="price2">$120</span> 
+            </div>
+          </div>
+          <input type="submit" class="btn" value="立即預約">
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/g5.jpg">
+        <div class="content">
+            <h2 class="location"> <i class="fas fa-map-marker-alt"></i> 十分瀑布</h2>
+          <p>十分瀑布位於臺灣新北市平溪區，為臺鐵支線平溪線的著名景點。地處基隆河上游瀑布群，為臺灣最大的簾幕式瀑布。</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price-tag">
+            <div class="price">$90 
+              <span class="price2">$120</span> 
+            </div>
+          </div>
+          <input type="submit" class="btn" value="立即預約">
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/g6.jpg">
+        <div class="content">
+            <h2 class="location"> <i class="fas fa-map-marker-alt"></i> 台北101</h2>
+          <p>台北101位於臺灣臺北市信義區的摩天大樓，樓高508公尺，地上101層、地下5層，總樓地板面積37萬1千平方公尺。</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price-tag">
+            <div class="price">$90 
+              <span class="price2">$120</span> 
+            </div>
+          </div>
+          <input type="submit" class="btn" value="立即預約">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 服務 -->
+  <section class="services" id="services">
+    <div class="title">
+      <span>服</span>
+      <span>務</span>
+    </div>
+
+    <div class="box-container">
+      <div class="box">
+        <i class="fas fa-plane"></i>
+        <h3>Journey planning</h3>
+        <p>彈性的路線規劃</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-hotel"></i>
+        <h3>Hotel</h3>
+        <p>精選安心舒適的高評價旅館</p>
+
+      </div>
+      <div class="box">
+        <i class="fas fa-utensils"></i>
+            <h3>Food and Drinks</h3>
+            <p>老饕與在地人皆讚不絕口的必吃美食</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-bullhorn"></i>
+            <h3>Knowledge-based guide</h3>
+            <p>引人入勝的專人導覽</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-hiking"></i>
+        <h3>Special pakages</h3>
+        <p>配合在地時節舉辦特別導覽</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-globe-asia"></i>
+        <h3>Multilingual Support</h3>
+        <p>英文、法文、德文、義大利文、西班牙文、韓文(遊客需事先於3日以前預約)</p>
+      </div>    
+    </div>
+
+
+  </section>
+  
+  <!-- 相片牆 -->
+  <section class="gallery" id="gallery">
+
+    <div class="title">
+      <span>相</span>
+      <span>片</span>
+      <span>牆</span>
+    </div>
+
+    <div class="box-container">
+      <div class="box">
+        <img src="images/alex-gorey-1dd5-wBwdZc-unsplash.jpg" alt="">
+        <div class="content">
+          <h2>精選景點</h2>
+          <p>雪山</p>
+          <a href="" class="btn">See More</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/patrick-minero-aKfUQhhs8gQ-unsplash.jpg" alt="">
+        <div class="content">
+          <h2>精選景點</h2>
+          <p>中正紀念堂</p>
+          <a href="" class="btn">See More</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/ga1.jpg" alt="">
+        <div class="content">
+          <h2>精選景點</h2>
+          <p>101煙火</p>
+          <a href="" class="btn">See More</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/k-x-i-t-h-v-i-s-u-a-l-s-6ayjetW37yk-unsplash.jpg" alt="">
+        <div class="content">
+          <h2>精選景點</h2>
+          <p>西門町商圈</p>
+          <a href="" class="btn">See More</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/ga2.jpg" alt="">
+        <div class="content">
+          <h2>精選景點</h2>
+          <p>基隆廟口夜市</p>
+          <a href="" class="btn">See More</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/ga3.jpg" alt="">
+        <div class="content">
+          <h2>精選景點</h2>
+          <p>九份</p>
+          <a href="" class="btn">See More</a>
+        </div>
+      </div>
+      
+    </div>
+    
+  </section>
+  
+
+  <!-- 評論 -->
+  <section class="reviews">
+    <div class="title">
+      <span>活</span>
+      <span>動</span>
+      <span>評</span>
+      <span>論</span>
+    </div>
+    <div class="swiper-container review-slider">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <div class="box">
+                  <img src="images/r1.jpg" alt="">
+                  <h2>Sophie</h2>
+                  <p>Just returned yesterday from our first visit to Taiwan. A big thank you from us to the My Taiwan Tour folks! We got the royal treatment, traveling around the city seeing fabulous sights all day long in comfort and had great fun with our cute and knowledgeable tour guide(Jay)! My besties and I were totally delighted with the tour and plan to book some other tours with this company again when we return to Taiwan:) </p>
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-slide">
+              <div class="box">
+                  <img src="images/r3.jpg" alt="">
+                  <h2>Alfred</h2>
+                  <p>My husband and I highly recommend this company to anyone who wants to visit Taiwan.
+                    Our guide Jaron was just great. She spent 6 days showing us around the island, from south to north.She guided us through a wide variety of experiences and provided us with lots of interesting information.
+                    This company know how to put together a great experience at very reasonable prices. We will definitely book with them again </p>
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-slide">
+              <div class="box">
+                  <img src="images/r2.jpg" alt="">
+                  <h2>Natalie</h2>
+                  <p>I went on this tour solo.Our guide Mr.Han had our backs. We ended up with amazing stinky tofu, an ai-yu drink, and tofu soft serve.
+                     Han was a fabulous guide, very knowledgeable and kind and had lovely conversations with us. It was a long day, but nothing felt rushed or not enough. Highly recommend this tour, and this tour company.
+                     Hope that I won't come alone again next time!</p>
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-slide">
+              <div class="box">
+                  <img src="images/r4.jpg" alt="">
+                  <h2>Gerald</h2>
+                  <p>We had an amazing tour of Yehliu Geopark, followed by the village of Jiufen.We could hear exotic birds chirping, and after a steep uphill walk, the ocean view was stunning.Our guide Steven recommended tasty delicacies, like bean sprout noodles and vinasse pork buns. Steven was very knowledgeable about Taiwan’s history and culture. Dusk turned into illuminated night time as a perfect way to end the day!</p>
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </section>
+  <!-- 聯絡我們 -->
+  <section class="contact" id="contact">
+    <div class="title">
+      <span>聯</span>
+      <span>絡</span>
+      <span>我</span>
+      <span>們</span>
+    </div>
+    <div class="content">
+      <form action="#">
+        <div class="inputbox">
+          <input type="text" placeholder="姓名">
+          <input type="email" placeholder="電子郵件">
+        </div>
+        <div class="inputbox">
+          <input type="number" placeholder="人數">
+          <input type="text" placeholder="主題">
+        </div>
+        <textarea placeholder="內容" name="" id="" cols="30" rows="10"></textarea>
+        <input type="submit" class="btn" value="送出">
+      </form>
+      <div class="images">
+        <img src="images/contact_img.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box link-box">
+        <h3>Web-link</h3>
+        <a href="#">首頁</a>
+        <a href="#">行程預約</a>
+        <a href="#">推薦行程</a>
+        <a href="#">服務</a>
+        <a href="#">相片牆</a>
+        <a href="#">評論</a>
+        <a href="#">聯絡我們</a>
+      </div>
+      <div class="box">
+          <h3>follow us</h3>
+          <a href="#">facebook</a>
+          <a href="#">instagram</a>
+          <a href="#">twitter</a>
+          <a href="#">linkedin</a>
+          <a href="#">Github</a>
+      </div>
+      <div class="box">
+        <h3>about me</h3>
+        <p>對世界懷抱諸多不滿，卻無能為力改變</p>
+        <p>深陷於痛苦無望之中，仍傻傻等待曙光</p>
+        <p>羨慕他人的光鮮亮麗，一事無成的自卑</p>
+        <p>披荊斬棘至遍體鱗傷，舊傷未癒新又增</p>
+      </div> 
+    </div>
+    <h1 class="credit"> created by <span> ms980607@gmail.com </span> | all rights reserved </h1>
+  </section>
+
+  <!-- script&js -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
+
+<!-- https://wsxedc54545.github.io/FunTaiwan -->
